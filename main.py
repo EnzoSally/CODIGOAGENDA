@@ -6,9 +6,13 @@ contato = {
 # Adicionando novo elemento
 contato['Pedro'] = "+555498888888"
 #alterar numero
-contato['Enzo'] = "55549484000"
-#excluir contatos
+contato['Enzo'] = "+55549484000"
 
-print(contato.pop('Marias', "Contato nao encontrado!"))
+#print(contato.pop('Maria', "Contato nao encontrado!"))
 
-print(contato)
+#print(contato.get("Pedra", "contato nao encontrado"))
+
+print("Enzo" in contato)
+
+for key,value in contato.items():
+    print(key,value)
